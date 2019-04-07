@@ -1,12 +1,175 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,600,700" rel="stylesheet">
+        <!-- inject:css-->
+	    <link rel="stylesheet" href="{{ asset('css/plugin.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/owlcarousel/owl.carousel.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/owlcarousel/owl.theme.default.min.css') }}">
+	    <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
+	    <link rel="icon" type="image/png" sizes="32x32" href="img/fevicon.png">
+	    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <title>{% block title %}Tweazy vous rend service{% endblock %}</title>
+        <style type="text/css">
+        body{
+    overflow-x: hidden;
+        }
+.special_item_background {
+    width: 100%;
+}
+.special .owl-item.center .special_item_background::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(254, 67, 91, 0.83);
+    content: '';
+    z-index: 0;
+    -webkit-transition: all 500ms 100ms ease;
+    -moz-transition: all 500ms 100ms ease;
+    -ms-transition: all 500ms 100ms ease;
+    -o-transition: all 500ms 100ms ease;
+    transition: all 500ms 100ms ease;
+}
+.special_item_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+.text-center {
+    text-align: center!important;
+}
+.special_category {
+    font-size: 24px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.special_title a {
+    font-size: 36px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+.special_slider_nav {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 20px;
+    width: 90px;
+    height: 90px;
+    background: #fe3c52;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+    z-index: 10;
+}
+.owl-item.center .special_item_background::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(254, 67, 91, 0.83);
+    content: '';
+    z-index: 0;
+    -webkit-transition: all 500ms 100ms ease;
+    -moz-transition: all 500ms 100ms ease;
+    -ms-transition: all 500ms 100ms ease;
+    -o-transition: all 500ms 100ms ease;
+    transition: all 500ms 100ms ease;
+}
+.edgtf-process-inner {
+    padding-top: 30px;
+    counter-reset: section;
+}
+.edgtf-process-item:before {
+    counter-increment: section;
+    content: counter(section) ".";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 45px);
+    width: 90px;
+    height: 60px;
+    font-family: "Shorelines Script",script;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.25em;
+    line-height: 60px;
+    letter-spacing: .08em;
+    text-align: center;
+    color: #ff3a54;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    z-index: 3;
+    box-sizing: border-box;
+    -webkit-transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+    -moz-transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+    transition: color .2s ease-out,background-color .2s ease-out,border-color .2s ease-out;
+}
+.edgtf-pi-content {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    margin-top: 30px;
+    padding: 50px 40px 44px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 16px 2px rgba(0,0,0,.04);
+}
+.testimonial-carousel .owl-nav .owl-prev {
+    left: 1rem;
+}
+.testimonial-carousel .owl-nav .owl-next {
+    right: 1rem;
+}
+.edgtf-pi-image {
+    display: block;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.edgtf-pi-image img {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+}
+.categories-cards .owl-stage{
+    height: 660px;
+}
+        </style>
         {% block stylesheets %}{% endblock %}
     </head>
     <body>
         {% block body %}{% endblock %}
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ asset('js/owlcarousel/owl.carousel.js') }}"></script>
         {% block javascripts %}{% endblock %}
     </body>
 </html>

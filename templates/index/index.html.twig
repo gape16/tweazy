@@ -1,0 +1,1470 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello IndexController!{% endblock %}
+
+{% block body %}
+<section class="intro-wrapper bgimage overlay overlay--dark">
+        <div class="bg_image_holder" style="visibility:visible;opacity:1;">
+<video src="{{ asset('images/FEB_2019_VLP.mp4') }}" playsinline autoplay muted loop>
+  Votre navigateur ne gère pas l'élément <code>video</code>.
+</video>
+        	</div>
+        <div class="mainmenu-wrapper">
+            
+    
+        
+    
+
+    
+        
+    
+
+
+    <div class="menu-area menu1 menu--light">
+        <div class="top-menu-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="menu-fullwidth">
+                            <div class="logo-wrapper order-lg-0 order-sm-1">
+                                <div class="logo logo-top">
+                                    <a href="index.html"><img src="{{ asset('images/logo-white1.png') }}" alt="logo image" class="img-fluid"></a>
+                                </div>
+                            </div><!-- ends: .logo-wrapper -->
+
+                            
+    <div class="menu-container order-lg-1 order-sm-0">
+        <div class="d_menu">
+            <nav class="navbar navbar-expand-lg mainmenu__menu">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#direo-navbar-collapse"
+                        aria-controls="direo-navbar-collapse"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon icon-menu"><i class="la la-reorder"></i></span>
+                </button>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="direo-navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="index.html">Accueil</a>
+                        </li>
+                        <li class="dropdown has_dropdown">
+                            <a>Qui sommes-nous</a>
+                        </li>
+                        <li class="dropdown has_dropdown">
+                            <a href="#" class="dropdown-toggle" id="drop4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                            <ul class="dropdown-menu" aria-labelledby="drop4">
+                                <li><a href="#">Maison</a></li>
+                                <li><a href="#">Evenements</a></li>
+                                <li><a href="#">Santé & bien-être</a></li>
+                                <li><a href="#">juridique</a></li>
+                                <li><a href="#">autre</a></li>
+                                <li><a href="#">Toutes les catégories</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown has_dropdown">
+                            <a>
+                                Fonctionnement
+                            </a>
+                        </li>
+                        <li class="dropdown has_dropdown">
+                            <a>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </nav>
+        </div>
+    </div>
+
+
+                            <div class="menu-right order-lg-2 order-sm-2">
+                                <div class="search-wrapper">
+                                    <div class="nav_right_module search_module">
+                                        <span class="icon-left" id="basic-addon9"><i class="la la-search"></i></span>
+                                        <div class="search_area">
+                                            <form action="/">
+                                                <div class="input-group input-group-light">
+                                                    <input type="text" class="form-control search_field top-search-field" placeholder="De quoi avez-vous besoin?" autocomplete="off">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="search-categories">
+                                        <ul class="list-unstyled">
+                                            <li><a href=""><span class="la la-glass bg-danger"></span> Food & Drinks</a></li>
+                                            <li><a href=""><span class="la la-cutlery bg-primary"></span> Restaurants</a></li>
+                                            <li><a href=""><span class="la la-map-marker bg-success"></span> Places</a></li>
+                                            <li><a href=""><span class="la la-shopping-cart bg-secondary"></span> Shopping & Store</a></li>
+                                            <li><a href=""><span class="la la-bed bg-info"></span> Hotels</a></li>
+                                            <li><a href=""><span class="la la-bank bg-warning"></span> Art & History</a></li>
+                                        </ul>
+                                    </div>
+                                </div><!-- ends: .search-wrapper -->
+                                <!-- start .author-area -->
+                                <div class="author-area">
+                                    <div class="author__access_area">
+                                        <ul class="d-flex list-unstyled align-items-center">
+                                            <li>
+                                                <a href="add-listing.html" class="btn btn-xs btn-gradient btn-gradient-two">
+                                                    <span class="la la-plus"></span> Publier un projet
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="" class="access-link" data-toggle="modal" data-target="#login_modal">Connexion</a>
+                                <span>or</span>
+                                <a href="" class="access-link" data-toggle="modal" data-target="#signup_modal">S'inscrire</a>
+                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- end .author-area -->
+
+                                <div class="offcanvas-menu d-none">
+                                    <a href="" class="offcanvas-menu__user"><i class="la la-user"></i></a>
+                                    <div class="offcanvas-menu__contents">
+                                        <a href="" class="offcanvas-menu__close"><i class="la la-times-circle"></i></a>
+                                        <div class="author-avatar">
+                                            <img src="{{ asset('images/author-avatar.png') }}" alt="" class="rounded-circle">
+                                        </div>
+                                        <ul class="list-unstyled">
+                                            <li><a href="dashboard-listings.html">My Profile</a></li>
+                                            <li><a href="dashboard-listings.html">My Listing</a></li>
+                                            <li><a href="dashboard-listings.html">Favorite Listing</a></li>
+                                            <li><a href="add-listing.html">Add Listing</a></li>
+                                            <li><a href="">Logout</a></li>
+                                        </ul>
+                                        <div class="search_area">
+                                            <form action="/">
+                                                <div class="input-group input-group-light">
+                                                    <input type="text" class="form-control search_field" placeholder="Search here..." autocomplete="off">
+                                                </div>
+                                                <button type="submit" class="btn btn-sm btn-secondary">Search</button>
+                                            </form>
+                                        </div><!-- ends: .search_area -->
+                                    </div><!-- ends: .author-info -->
+                                </div><!-- ends: .offcanvas-menu -->
+                            </div><!-- ends: .menu-right -->
+                        </div>
+                    </div>
+                </div>
+                <!-- end /.row -->
+            </div>
+            <!-- end /.container -->
+        </div>
+        <!-- end  -->
+    </div>
+
+        </div><!-- ends: .mainmenu-wrapper -->
+
+        <div class="directory_content_area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="search_title_area">
+                            <h2 class="title">Trouvez le professionnel dont VOUS avez besoin</h2>
+                            <p class="sub_title">Laissez tweazy démarcher les professionnels de votre région pour répondre à votre service..</p>
+                        </div><!-- ends: .search_title_area -->
+
+                        <form action="/" class="search_form">
+                            <div class="atbd_seach_fields_wrapper">
+                                <div class="single_search_field search_query">
+                                    <input class="form-control search_fields" type="text" placeholder="De quel service avez vous besoin ?">
+                                </div>
+                                <div class="atbd_submit_btn">
+                                    <button type="submit" class="btn btn-block btn-gradient btn-gradient-one btn-md btn_search">Rechercher</button>
+                                </div>
+                            </div>
+                        </form><!-- ends: .search_form -->
+                        <div class="directory_home_category_area">
+                            <ul class="categories">
+                            {% set values = ['success', 'danger', 'warning', 'info','primary']%}
+                            {% for key,souscategory in categories|slice(0, 5) %}
+                                <li>
+                                    <a href="">
+                                        <span class="color-{{values[key]}}"><i class="la {{ souscategory.category.icon }}"></i></span>
+                                        {{ souscategory.category.name }}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div><!-- ends: .directory_home_category_area -->
+                    </div><!-- ends: .col-lg-10 -->
+                </div>
+            </div>
+        </div><!-- ends: .directory_search_area -->
+
+    </section><!-- ends: .intro-wrapper -->
+
+    <section class="categories-cards section-padding-two">
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2><span class="bt"><span>Les Services de <b>Votre régions</b></span></span></h2>
+                        <p>Voici l'ensemble des catégories recherchées dans votre région : Nouvelle Aquitaine</p>
+                    </div>
+                </div>
+            </div>
+    
+
+    <div class="row">
+{% for key,souscategory in categories|slice(0, 6) %}
+{% if key == 0 %}
+        <div class="col-lg-6 col-sm-6">
+{% elseif key == 5 %}
+        <div class="col-lg-6 col-sm-6">
+{% else %}
+        <div class="col-lg-3 col-sm-6">
+{% endif %}         
+
+    <div class="category-single category--img">
+        <figure class="category--img4">
+            <img src="{{ asset('images/'~ souscategory.category.img) }}" alt="">
+            <figcaption class="overlay-bg">
+                <a class="cat-box">
+                    <div>
+                        <div class="icon">
+                         <ul class="post-categories">
+                            <li>{{ souscategory.category.name }}</li>
+                             <li>{{ souscategory.name }}</li>
+                             <i class="la la-eye"></i>
+                        </ul>
+                          <span class="la {{ souscategory.category.icon }}" style="display:none;"></span>
+                       </div>
+                      <h4 class="cat-name">{{ souscategory.name }}</h4>
+                        <span class="badge badge-pill badge-success">48 Listings</span>
+                    </div>
+              </a>
+</figcaption>
+       </figure>
+    </div><!-- ends: .category-single --> 
+
+        </div><!-- ends: .col -->
+{% endfor %}
+        
+    </div>
+
+        </div>
+
+
+
+
+
+
+
+
+<div class="row" style="display:none;">
+           <div class="col-lg-12"> 
+<div class="owl-carousel owl-theme special_slider">
+					{% for key,category in categories|slice(0, 6) %}
+						<!-- Special Offers Item -->
+						<div class="owl-item">
+							<div class="special_item">
+								<div class="special_item_background"><img src="{{ asset('images/special/'~ category.img) }}" alt="{{ category.name }}"></div>
+								<div class="special_item_content text-center">
+									<div class="special_category">{{ category.name }}</div>
+									<div class="special_title"><a href="offers.html">42 Professionnels</a></div>
+								</div>
+							</div>
+						</div>
+					{% endfor %}
+					
+
+				</div>
+				<div class="special_slider_nav d-flex flex-column align-items-center justify-content-center">
+					<img src="{{ asset('images/special_slider.png') }}" alt="">
+				</div>
+</div></div>
+
+
+
+
+
+
+
+    </section><!-- ends: .categories-cards -->
+
+    <section class="listing-cards section-bg section-padding" style="display:none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Best Listings Around the World</h2>
+                        <p>Explore the popular listings around the world</p>
+                    </div>
+                </div>
+
+                <div class="listing-cards-wrapper col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+
+    <div class="atbd_single_listing ">
+        <article class="atbd_single_listing_wrapper">
+            <figure class="atbd_listing_thumbnail_area">
+                <div class="atbd_listing_image">
+                    <a href="">
+                        <img src="{{ asset('images/p1.jpg') }}" alt="listing image">
+                    </a>
+                </div><!-- ends: .atbd_listing_image -->
+                <div class="atbd_author atbd_author--thumb">
+                                    <a href="">
+                                        <img src="{{ asset('images/author-thumb2.jpg') }}" alt="Author Image">
+                                        <span class="custom-tooltip">Jeffery A, Owner</span>
+                                    </a>
+                                </div>
+                <div class="atbd_thumbnail_overlay_content">
+                    <ul class="atbd_upper_badge">
+                        <li><span class="atbd_badge atbd_badge_featured">Featured</span></li>
+                    </ul><!-- ends .atbd_upper_badge -->
+                </div><!-- ends: .atbd_thumbnail_overlay_content -->
+            </figure><!-- ends: .atbd_listing_thumbnail_area -->
+
+            <div class="atbd_listing_info">
+                <div class="atbd_content_upper">
+                    <h4 class="atbd_listing_title">
+                        <a href="">Flanders Heat &amp; Air Systems</a>
+                    </h4>
+                    
+                    <div class="atbd_listing_meta">
+                        <span class="atbd_meta atbd_listing_rating">4.5<i class="la la-star"></i></span>
+                        
+                        <span class="atbd_meta atbd_listing_price">$55.00</span>
+                        <span class="atbd_meta atbd_badge_open">Open Now</span>
+                        
+                    </div><!-- End atbd listing meta -->
+                    <div class="atbd_listing_data_list">
+                        <ul>
+                            <li>
+                                <p><span class="la la-map-marker"></span>Los Angeles, United States</p>
+                            </li>
+                            <li>
+                                <p><span class="la la-phone"></span>(415) 796-3633</p>
+                            </li>
+                            <li>
+                                <p><span class="la la-calendar-check-o"></span>Posted 2 months ago</p>
+                            </li>
+                        </ul>
+                    </div><!-- End atbd listing meta -->
+                    
+                </div><!-- end .atbd_content_upper -->
+
+                <div class="atbd_listing_bottom_content">
+                    <div class="atbd_content_left">
+                        <div class="atbd_listing_category">
+                            <a href=""><span class="la la-glass"></span>Restaurant</a>
+                            
+                        </div>
+                    </div>
+                    <ul class="atbd_content_right">
+                        <li class="atbd_count"><span class="la la-eye"></span>900+</li>
+                        <li class="atbd_save">
+                            <span class="la la-heart-o"></span>
+                        </li>
+                        
+                    </ul>
+                </div><!-- end .atbd_listing_bottom_content -->
+            </div><!-- ends: .atbd_listing_info -->
+        </article><!-- atbd_single_listing_wrapper -->
+    </div>
+
+                        </div><!-- ends: .col-lg-4 -->
+                        <div class="col-lg-4 col-sm-6">
+                            
+    
+        
+    
+
+    
+        
+    
+    
+    
+    
+        
+    
+    
+    
+
+    
+        
+    
+
+    
+        
+    
+
+
+    <div class="atbd_single_listing ">
+        <article class="atbd_single_listing_wrapper">
+            <figure class="atbd_listing_thumbnail_area">
+                <div class="atbd_listing_image">
+                    <a href="">
+                        <img src="{{ asset('images/p2.jpg') }}" alt="listing image">
+                    </a>
+                </div><!-- ends: .atbd_listing_image -->
+                <div class="atbd_author atbd_author--thumb">
+                                    <a href="">
+                                        <img src="{{ asset('images/author-thumb2.jpg') }}" alt="Author Image">
+                                        <span class="custom-tooltip">Jeffery A, Owner</span>
+                                    </a>
+                                </div>
+                <div class="atbd_thumbnail_overlay_content">
+                    <ul class="atbd_upper_badge">
+                        <li><span class="atbd_badge atbd_badge_popular">Popular</span></li>
+                    </ul><!-- ends .atbd_upper_badge -->
+                </div><!-- ends: .atbd_thumbnail_overlay_content -->
+            </figure><!-- ends: .atbd_listing_thumbnail_area -->
+
+            <div class="atbd_listing_info">
+                <div class="atbd_content_upper">
+                    <h4 class="atbd_listing_title">
+                        <a href="">Sydney Restaurant Towers</a>
+                    </h4>
+                    
+                    <div class="atbd_listing_meta">
+                        <span class="atbd_meta atbd_listing_rating">4.5<i class="la la-star"></i></span>
+                        <span class="atbd_meta atbd_listing_average_pricing" data-toggle="tooltip" data-placement="top" title="" data-original-title="Average">
+                                <span class="atbd_active"><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                                <span class="atbd_active"><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                                <span><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                                <span><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                            </span>
+                        
+                        
+                        <span class="atbd_meta atbd_badge_close">Closed</span>
+                    </div><!-- End atbd listing meta -->
+                    <div class="atbd_listing_data_list">
+                        <ul>
+                            <li>
+                                <p><span class="la la-map-marker"></span>Los Angeles, United States</p>
+                            </li>
+                            <li>
+                                <p><span class="la la-phone"></span>(415) 796-3633</p>
+                            </li>
+                            <li>
+                                <p><span class="la la-calendar-check-o"></span>Posted 2 months ago</p>
+                            </li>
+                        </ul>
+                    </div><!-- End atbd listing meta -->
+                    
+                </div><!-- end .atbd_content_upper -->
+
+                <div class="atbd_listing_bottom_content">
+                    <div class="atbd_content_left">
+                        <div class="atbd_listing_category">
+                            <a href=""><span class="la la-map-marker"></span>Places</a>
+                            <div class="atbd_cat_popup">
+                                <span>+2</span>
+                                <div class="atbd_cat_popup_wrapper">
+                                   <span><a href="">Event</a></span>
+                                   <span><a href="">Food</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="atbd_content_right">
+                        <li class="atbd_count"><span class="la la-eye"></span>900+</li>
+                        <li class="atbd_save">
+                            <span class="la la-heart-o"></span>
+                        </li>
+                        
+                    </ul>
+                </div><!-- end .atbd_listing_bottom_content -->
+            </div><!-- ends: .atbd_listing_info -->
+        </article><!-- atbd_single_listing_wrapper -->
+    </div>
+
+                        </div><!-- ends: .col-lg-4 -->
+                        <div class="col-lg-4 col-sm-6">
+                            
+    
+        
+    
+
+    
+        
+    
+    
+    
+    
+        
+    
+    
+    
+
+    
+        
+    
+
+    
+
+
+    <div class="atbd_single_listing ">
+        <article class="atbd_single_listing_wrapper">
+            <figure class="atbd_listing_thumbnail_area">
+                <div class="atbd_listing_image">
+                    <a href="">
+                        <img src="{{ asset('images/p3.jpg') }}" alt="listing image">
+                    </a>
+                </div><!-- ends: .atbd_listing_image -->
+                <div class="atbd_author atbd_author--thumb">
+                                    <a href="">
+                                        <img src="{{ asset('images/author-thumb2.jpg') }}" alt="Author Image">
+                                        <span class="custom-tooltip">Jeffery A, Owner</span>
+                                    </a>
+                                </div>
+                <div class="atbd_thumbnail_overlay_content">
+                    <ul class="atbd_upper_badge">
+                        <li><span class="atbd_badge atbd_badge_new">New</span></li>
+                    </ul><!-- ends .atbd_upper_badge -->
+                </div><!-- ends: .atbd_thumbnail_overlay_content -->
+            </figure><!-- ends: .atbd_listing_thumbnail_area -->
+
+            <div class="atbd_listing_info">
+                <div class="atbd_content_upper">
+                    <h4 class="atbd_listing_title">
+                        <a href="">Kung Food &amp; Drinks</a>
+                    </h4>
+                    
+                    <div class="atbd_listing_meta">
+                        <span class="atbd_meta atbd_listing_rating">4.5<i class="la la-star"></i></span>
+                        <span class="atbd_meta atbd_listing_average_pricing" data-toggle="tooltip" data-placement="top" title="" data-original-title="Average">
+                                <span class="atbd_active"><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                                <span class="atbd_active"><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                                <span><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                                <span><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                            </span>
+                        
+                        
+                        <span class="atbd_meta atbd_badge_close">Closed</span>
+                    </div><!-- End atbd listing meta -->
+                    <div class="atbd_listing_data_list">
+                        <ul>
+                            <li>
+                                <p><span class="la la-map-marker"></span>Los Angeles, United States</p>
+                            </li>
+                            <li>
+                                <p><span class="la la-phone"></span>(415) 796-3633</p>
+                            </li>
+                            <li>
+                                <p><span class="la la-calendar-check-o"></span>Posted 2 months ago</p>
+                            </li>
+                        </ul>
+                    </div><!-- End atbd listing meta -->
+                    
+                </div><!-- end .atbd_content_upper -->
+
+                <div class="atbd_listing_bottom_content">
+                    <div class="atbd_content_left">
+                        <div class="atbd_listing_category">
+                            <a href=""><span class="la la-shopping-cart"></span>Shopping</a>
+                            
+                        </div>
+                    </div>
+                    <ul class="atbd_content_right">
+                        <li class="atbd_count"><span class="la la-eye"></span>900+</li>
+                        <li class="atbd_save">
+                            <span class="la la-heart-o"></span>
+                        </li>
+                        
+                    </ul>
+                </div><!-- end .atbd_listing_bottom_content -->
+            </div><!-- ends: .atbd_listing_info -->
+        </article><!-- atbd_single_listing_wrapper -->
+    </div>
+
+                        </div><!-- ends: .col-lg-4 -->
+                        <div class="col-lg-4 col-sm-6">
+                            
+    
+        
+    
+
+    
+        
+    
+    
+    
+        
+    
+    
+    
+    
+
+    
+        
+    
+
+    
+
+
+    <div class="atbd_single_listing ">
+        <article class="atbd_single_listing_wrapper">
+            <figure class="atbd_listing_thumbnail_area">
+                <div class="atbd_listing_image">
+                    <a href="">
+                        <img src="{{ asset('images/p4.jpg') }}" alt="listing image">
+                    </a>
+                </div><!-- ends: .atbd_listing_image -->
+                <div class="atbd_author atbd_author--thumb">
+                                    <a href="">
+                                        <img src="{{ asset('images/author-thumb2.jpg') }}" alt="Author Image">
+                                        <span class="custom-tooltip">Jeffery A, Owner</span>
+                                    </a>
+                                </div>
+                <div class="atbd_thumbnail_overlay_content">
+                    <ul class="atbd_upper_badge">
+                        <li><span class="atbd_badge atbd_badge_featured">Featured</span></li>
+                        <li><span class="atbd_badge atbd_badge_popular">Popular</span></li>
+                    </ul><!-- ends .atbd_upper_badge -->
+                </div><!-- ends: .atbd_thumbnail_overlay_content -->
+            </figure><!-- ends: .atbd_listing_thumbnail_area -->
+
+            <div class="atbd_listing_info">
+                <div class="atbd_content_upper">
+                    <h4 class="atbd_listing_title">
+                        <a href="">Favorite Place Fog Bank</a>
+                    </h4>
+                    
+                    <div class="atbd_listing_meta">
+                        <span class="atbd_meta atbd_listing_rating">4.5<i class="la la-star"></i></span>
+                        <span class="atbd_meta atbd_listing_average_pricing" data-toggle="tooltip" data-placement="top" title="" data-original-title="Average">
+                                <span class="atbd_active"><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                                <span class="atbd_active"><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                                <span><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                                <span><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                            </span>
+                        
+                        <span class="atbd_meta atbd_badge_open">Open Now</span>
+                        
+                    </div><!-- End atbd listing meta -->
+                    <div class="atbd_listing_data_list">
+                        <ul>
+                            <li>
+                                <p><span class="la la-map-marker"></span>Los Angeles, United States</p>
+                            </li>
+                            <li>
+                                <p><span class="la la-phone"></span>(415) 796-3633</p>
+                            </li>
+                            <li>
+                                <p><span class="la la-calendar-check-o"></span>Posted 2 months ago</p>
+                            </li>
+                        </ul>
+                    </div><!-- End atbd listing meta -->
+                    
+                </div><!-- end .atbd_content_upper -->
+
+                <div class="atbd_listing_bottom_content">
+                    <div class="atbd_content_left">
+                        <div class="atbd_listing_category">
+                            <a href=""><span class="la la-bank"></span>Art &amp; History</a>
+                            
+                        </div>
+                    </div>
+                    <ul class="atbd_content_right">
+                        <li class="atbd_count"><span class="la la-eye"></span>900+</li>
+                        <li class="atbd_save">
+                            <span class="la la-heart-o"></span>
+                        </li>
+                        
+                    </ul>
+                </div><!-- end .atbd_listing_bottom_content -->
+            </div><!-- ends: .atbd_listing_info -->
+        </article><!-- atbd_single_listing_wrapper -->
+    </div>
+
+                        </div><!-- ends: .col-lg-4 -->
+                        <div class="col-lg-4 col-sm-6">
+                            
+    
+        
+    
+
+    
+    
+        
+    
+    
+    
+        
+    
+    
+    
+
+    
+
+    
+
+
+    <div class="atbd_single_listing ">
+        <article class="atbd_single_listing_wrapper">
+            <figure class="atbd_listing_thumbnail_area">
+                <div class="atbd_listing_image">
+                    <a href="">
+                        <img src="{{ asset('images/p5.jpg') }}" alt="listing image">
+                    </a>
+                </div><!-- ends: .atbd_listing_image -->
+                <div class="atbd_author atbd_author--thumb">
+                                    <a href="">
+                                        <img src="{{ asset('images/author-thumb2.jpg') }}" alt="Author Image">
+                                        <span class="custom-tooltip">Jeffery A, Owner</span>
+                                    </a>
+                                </div>
+                <div class="atbd_thumbnail_overlay_content">
+                    <ul class="atbd_upper_badge">
+                        
+                    </ul><!-- ends .atbd_upper_badge -->
+                </div><!-- ends: .atbd_thumbnail_overlay_content -->
+            </figure><!-- ends: .atbd_listing_thumbnail_area -->
+
+            <div class="atbd_listing_info">
+                <div class="atbd_content_upper">
+                    <h4 class="atbd_listing_title">
+                        <a href="">Flanders Heat &amp; Air Systems</a>
+                    </h4>
+                    
+                    <div class="atbd_listing_meta">
+                        <span class="atbd_meta atbd_listing_rating">4.5<i class="la la-star"></i></span>
+                        
+                        <span class="atbd_meta atbd_listing_price">$55.00</span>
+                        
+                        <span class="atbd_meta atbd_badge_close">Closed</span>
+                    </div><!-- End atbd listing meta -->
+                    <div class="atbd_listing_data_list">
+                        <ul>
+                            <li>
+                                <p><span class="la la-map-marker"></span>Los Angeles, United States</p>
+                            </li>
+                            <li>
+                                <p><span class="la la-phone"></span>(415) 796-3633</p>
+                            </li>
+                            <li>
+                                <p><span class="la la-calendar-check-o"></span>Posted 2 months ago</p>
+                            </li>
+                        </ul>
+                    </div><!-- End atbd listing meta -->
+                    
+                </div><!-- end .atbd_content_upper -->
+
+                <div class="atbd_listing_bottom_content">
+                    <div class="atbd_content_left">
+                        <div class="atbd_listing_category">
+                            <a href=""><span class="la la-bed"></span>Hotel &amp; Travel</a>
+                            
+                        </div>
+                    </div>
+                    <ul class="atbd_content_right">
+                        <li class="atbd_count"><span class="la la-eye"></span>900+</li>
+                        <li class="atbd_save">
+                            <span class="la la-heart-o"></span>
+                        </li>
+                        
+                    </ul>
+                </div><!-- end .atbd_listing_bottom_content -->
+            </div><!-- ends: .atbd_listing_info -->
+        </article><!-- atbd_single_listing_wrapper -->
+    </div>
+
+                        </div><!-- ends: .col-lg-4 -->
+                        <div class="col-lg-4 col-sm-6">
+                            
+    
+        
+    
+
+    
+        
+    
+    
+    
+        
+    
+    
+    
+    
+
+    
+
+    
+        
+    
+
+
+    <div class="atbd_single_listing ">
+        <article class="atbd_single_listing_wrapper">
+            <figure class="atbd_listing_thumbnail_area">
+                <div class="atbd_listing_image">
+                    <a href="">
+                        <img src="{{ asset('images/p6.jpg') }}" alt="listing image">
+                    </a>
+                </div><!-- ends: .atbd_listing_image -->
+                <div class="atbd_author atbd_author--thumb">
+                                    <a href="">
+                                        <img src="{{ asset('images/author-thumb2.jpg') }}" alt="Author Image">
+                                        <span class="custom-tooltip">Jeffery A, Owner</span>
+                                    </a>
+                                </div>
+                <div class="atbd_thumbnail_overlay_content">
+                    <ul class="atbd_upper_badge">
+                        
+                    </ul><!-- ends .atbd_upper_badge -->
+                </div><!-- ends: .atbd_thumbnail_overlay_content -->
+            </figure><!-- ends: .atbd_listing_thumbnail_area -->
+
+            <div class="atbd_listing_info">
+                <div class="atbd_content_upper">
+                    <h4 class="atbd_listing_title">
+                        <a href="">Store Clothing Shopping Mall</a>
+                    </h4>
+                    
+                    <div class="atbd_listing_meta">
+                        <span class="atbd_meta atbd_listing_rating">4.5<i class="la la-star"></i></span>
+                        <span class="atbd_meta atbd_listing_average_pricing" data-toggle="tooltip" data-placement="top" title="" data-original-title="Average">
+                                <span class="atbd_active"><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                                <span class="atbd_active"><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                                <span><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                                <span><img src="{{ asset('images/svg/dollar.svg') }}" class="svg" alt="" /></span>
+                            </span>
+                        
+                        <span class="atbd_meta atbd_badge_open">Open Now</span>
+                        
+                    </div><!-- End atbd listing meta -->
+                    <div class="atbd_listing_data_list">
+                        <ul>
+                            <li>
+                                <p><span class="la la-map-marker"></span>Los Angeles, United States</p>
+                            </li>
+                            <li>
+                                <p><span class="la la-phone"></span>(415) 796-3633</p>
+                            </li>
+                            <li>
+                                <p><span class="la la-calendar-check-o"></span>Posted 2 months ago</p>
+                            </li>
+                        </ul>
+                    </div><!-- End atbd listing meta -->
+                    
+                </div><!-- end .atbd_content_upper -->
+
+                <div class="atbd_listing_bottom_content">
+                    <div class="atbd_content_left">
+                        <div class="atbd_listing_category">
+                            <a href=""><span class="la la-cutlery"></span>Food &amp; Drink</a>
+                            <div class="atbd_cat_popup">
+                                <span>+2</span>
+                                <div class="atbd_cat_popup_wrapper">
+                                   <span><a href="">Event</a></span>
+                                   <span><a href="">Food</a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="atbd_content_right">
+                        <li class="atbd_count"><span class="la la-eye"></span>900+</li>
+                        <li class="atbd_save">
+                            <span class="la la-heart-o"></span>
+                        </li>
+                        
+                    </ul>
+                </div><!-- end .atbd_listing_bottom_content -->
+            </div><!-- ends: .atbd_listing_info -->
+        </article><!-- atbd_single_listing_wrapper -->
+    </div>
+
+                        </div><!-- ends: .col-lg-4 -->
+                        <div class="col-lg-12 text-center m-top-20">
+                            <a href="" class="btn btn-gradient btn-gradient-two">Explore All 200+</a>
+                        </div>
+                    </div>
+                </div><!-- ends: .listing-cards-wrapper -->
+
+            </div>
+        </div>
+    </section><!-- ends: .listing-cards -->
+
+    <section class="cta section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Pourquoi choisir <span>Tweazy</span>?</h2>
+                        <p>Pour trouver un professionnel proche de chez vous</p>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6">
+                            <img src="{{ asset('images/svg/illustration-1.svg') }}" alt="" class="svg">
+                        </div>
+                        <div class="col-lg-5 offset-lg-1 col-md-6 mt-5 mt-md-0">
+                            
+    <ul class="feature-list-wrapper list-unstyled">
+        <li>
+            <div class="icon"><span class="circle-secondary"><i class="la la-check-circle"></i></span></div>
+            <div class="list-content">
+                <h4>Liste de professionnels adaptés</h4>
+                <p>Nous choisissons les professionnels proche de vous et qui sont adaptés à votre demande.</p>
+            </div>
+        </li>
+        <li>
+            <div class="icon"><span class="circle-success"><i class="la la-money"></i></span></div>
+            <div class="list-content">
+                <h4>Gratuit</h4>
+                <p>Que vous ayez un projet simple ou de grande envergure, tweazy propose ses services gratuitement, profitez en !</p>
+            </div>
+        </li>
+        <li>
+            <div class="icon"><span class="circle-primary"><i class="la la-line-chart"></i></span></div>
+            <div class="list-content">
+                <h4>Aucune recherche</h4>
+                <p>Graàce à notre service, vous n'aurez plus à passez des journées pour rechercher un professionnel. Il viennent à vous !</p>
+            </div>
+        </li>
+    </ul><!-- ends: .feature-list-wrapper -->
+
+                            <ul class="action-btns list-unstyled">
+                                <li><a href="" class="btn btn-success">Comment ça marche ?</a></li>
+                                <li><a href="" class="btn btn-primary">Je débute mon projet</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- ends: .cta -->
+
+<section class="section-padding">
+<div class="container" style="max-width:1300px;">
+            <div class="row edgtf-process-inner edgtf-outer-space">
+            <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Comment utiliser <span>trouver un professionnel</span>?</h2>
+                        <p>Description, Modération, Choix</p>
+                    </div>
+                </div>
+						<div class="col-lg-4 edgtf-process-item">
+						<div class="edgtf-pi-content">
+							<div class="edgtf-pi-image" style="margin-bottom: 32px">
+							<img width="252" height="290" src="{{ asset('images/process1.png') }}" class="attachment-full size-full" alt="a">			</div>
+								<h4 class="edgtf-pi-title">Décrivez votre projet</h4>
+								<p class="edgtf-pi-text" style="margin-top: 16px">Vous devrez répondre à quelques questions pour que nous puissions cibler au mieux votre demande.</p>
+								</div>
+						</div>
+						<div class="col-lg-4 edgtf-process-item">
+						<div class="edgtf-pi-content">
+							<div class="edgtf-pi-image" style="margin-bottom: 32px">
+							<img width="252" height="290" src="{{ asset('images/process2.png') }}" class="attachment-full size-full" alt="a">			</div>
+								<h4 class="edgtf-pi-title">Visibilité de votre demande</h4>
+								<p class="edgtf-pi-text" style="margin-top: 16px">Votre demande sera validée par notre service de modération pour éviter toutes demandes non appropriées.</p>
+								</div>
+						</div>
+						<div class="col-lg-4 edgtf-process-item">
+						<div class="edgtf-pi-content">
+							<div class="edgtf-pi-image" style="margin-bottom: 32px">
+							<img width="252" height="290" src="{{ asset('images/process3.png') }}" class="attachment-full size-full" alt="a">			</div>
+								<h4 class="edgtf-pi-title">Choisissez le professionnel</h4>
+								<p class="edgtf-pi-text" style="margin-top: 16px">Les professionnels vont prendre contact par le moyen que vous souhaitez et vous n'aurez plus qu'à choisir celui qui vous convient.</p>
+								</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+</section>
+<section class="cta section-padding border-bottom" style="background:#F5F5F5;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Nos meilleurs <span>Professionnels</span> dans votre région</h2>
+                        <p>Le classement évolue tous les jours</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" style="text-align:center;">
+                	<div class="round" style="margin-left: 60px;margin-right: 60px;position: relative;">
+                	<div style='position:absolute;background-color: #f5548e;border-radius: 50%;right: 10px;bottom: 20px;'><i class="la la-thumbs-o-up" style="font-size: 2rem;padding: 12px;    color: white;"></i></div>
+                	<img class="mx-auto d-block" src="{{ asset('images/perso1.jpg') }}" style="border-radius: 50%;display: block;margin: 0;line-height: 0;max-width: 100%;height: auto;">
+                	</div><br>
+                	<h3><span style="    color: #f5548e;">Jody </span>Willis</h3><br>
+                	<p>
+	                	Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.<br>
+						<span style="font-weight:bold;color:black;">IT Café CEO</span>
+                	</p>
+                </div>
+                <div class="col-lg-4" style="text-align:center;">
+                	<div class="round" style="margin-left: 60px;margin-right: 60px;position: relative;">
+                	<div style='position:absolute;background-color: #f5548e;border-radius: 50%;right: 10px;bottom: 20px;'><i class="la la-thumbs-o-up" style="font-size: 2rem;padding: 12px;    color: white;"></i></div>
+                	<img class="mx-auto d-block" src="{{ asset('images/perso2.jpg') }}" style="border-radius: 50%;display: block;margin: 0;line-height: 0;max-width: 100%;height: auto;">
+                	</div><br>
+                	<h3><span style="    color: #f5548e;">Erica </span>Washington</h3><br>
+                	<p>
+	                	Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible procedures.<br>
+						<span style="font-weight:bold;color:black;">Berg Hotel PR Manager</span>
+                	</p>
+                </div>
+                <div class="col-lg-4" style="text-align:center;">
+                	<div class="round" style="margin-left: 60px;margin-right: 60px;position: relative;">
+                	<div style='position:absolute;background-color: #f5548e;border-radius: 50%;right: 10px;bottom: 20px;'><i class="la la-thumbs-o-up" style="font-size: 2rem;padding: 12px;    color: white;"></i></div>
+                	<img class="mx-auto d-block" src="{{ asset('images/perso3.jpg') }}" style="border-radius: 50%;display: block;margin: 0;line-height: 0;max-width: 100%;height: auto;">
+                	</div><br>
+                	<h3><span style="    color: #f5548e;">Mark </span>Watson</h3><br>
+                	<p>
+	                	Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas.<br>
+						<span style="font-weight:bold;color:black;">Das Auto Shop</span>
+                	</p>
+                </div>
+
+            </div>
+        </div>
+</section>
+
+
+
+    <section class="places section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Où vous retrouverez nos services</h2>
+                        <p>Profitez pleinement de nos services où que vous soyez</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    
+    <div class="cat-places-wrapper">
+        
+    <div class="category-place-single">
+        <figure>
+            <a href=""><img src="{{ asset('images/place1.png') }}" alt=""></a>
+            <figcaption>
+                <h3>Bayonne</h3>
+                <p>68 Professionnels</p>
+            </figcaption>
+        </figure>
+    </div><!-- ends: .category-place-single -->
+
+        
+    <div class="category-place-single">
+        <figure>
+            <a href=""><img src="{{ asset('images/place2.png') }}" alt=""></a>
+            <figcaption>
+                <h3>La Rochelle</h3>
+                <p>68 Professionnels</p>
+            </figcaption>
+        </figure>
+    </div><!-- ends: .category-place-single -->
+
+        
+    <div class="category-place-single">
+        <figure>
+            <a href=""><img src="{{ asset('images/place3.png') }}" alt=""></a>
+            <figcaption>
+                <h3>Bordeaux</h3>
+                <p>68 Professionnels</p>
+            </figcaption>
+        </figure>
+    </div><!-- ends: .category-place-single -->
+
+        
+    <div class="category-place-single">
+        <figure>
+            <a href=""><img src="{{ asset('images/place4.png') }}" alt=""></a>
+            <figcaption>
+                <h3>Paris</h3>
+                <p>68 Professionnels</p>
+            </figcaption>
+        </figure>
+    </div><!-- ends: .category-place-single -->
+
+    </div><!-- ends: .col-lg-12 -->
+
+                </div>
+
+                <div class="col-lg-12">
+                    
+    <div class="place-list-wrapper">
+        <ul class="list-unstyled">
+            <li><a href="">Versailles (45)</a></li>
+            <li><a href="">Vitry-sur-Seine (95)</a></li>
+            <li><a href="">Fort-de-France (90)</a></li>
+            <li><a href="">Poitiers (73)</a></li>
+            <li><a href="">Nanterre (97)</a></li>
+            <li><a href="">Avignon (960)</a></li>
+            <li><a href="">Créteil (46)</a></li>
+            <li><a href="">Dunkerque (46)</a></li>
+            <li><a href="">Nouméa (16)</a></li>
+            <li><a href="">Tourcoing (6)</a></li>
+            <li><a href="">Roubaix (53)</a></li>
+            <li><a href="">Argenteuil (83)</a></li>
+            <li><a href="">Montreuil (71)</a></li>
+            <li><a href="">Caen (46)</a></li>
+            <li><a href="">Mulhouse (727)</a></li>
+            <li><a href="">Nancy (655)</a></li>
+            <li><a href="">Orléans (9)</a></li>
+            <li><a href="">Rouen (46)</a></li>
+            <li><a href="">Saint-Denis (790)</a></li>
+            <li><a href="">Besançon (52)</a></li>
+            <li><a href="">Boulogne-Billancourt (657)</a></li>
+            <li><a href="">Metz (12)</a></li>
+            <li><a href="">Perpignan (6)</a></li>
+            <li><a href="">Amiens (24)</a></li>
+            <li><a href="">Tours (276)</a></li>
+            <li><a href="">Aix-en-Provence (146)</a></li>
+            <li><a href="">Brest (70)</a></li>
+            <li><a href="">Clermont-Ferrand (64)</a></li>
+            <li><a href="">Le Mans (195)</a></li>
+            <li><a href="">Limoges (328)</a></li>
+            <li><a href="">Nîmes (27)</a></li>
+            <li><a href="">Angers (42)</a></li>
+            <li><a href="">Dijon (446)</a></li>
+            <li><a href="">Villeurbanne (3)</a></li>
+            <li><a href="">Grenoble (25)</a></li>
+            <li><a href="">Toulon (967)</a></li>
+            <li><a href="">Le Havre (923)</a></li>
+            <li><a href="">Saint-Étienne (80)</a></li>
+            <li><a href="">Reims (60)</a></li>
+            <li><a href="">Rennes (52)</a></li>
+            <li><a href="">Lille (68)</a></li>
+            <li><a href="">Bordeaux (67)</a></li>
+            <li><a href="">Montpellier (87)</a></li>
+            <li><a href="">Strasbourg (24)</a></li>
+            <li><a href="">Nantes (14)</a></li>
+            <li><a href="">Nice (43)</a></li>
+            <li><a href="">Toulouse (114)</a></li>
+            <li><a href="">Lyon (22)</a></li>
+            <li><a href="">Marseille (42)</a></li>
+            <li><a href="">Paris (552)</a></li>
+        </ul>
+    </div>
+
+                </div>
+            </div>
+        </div>
+    </section><!-- ends: .places -->
+
+    <section class="testimonial-wrapper section-padding--bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Faites-nous confiance avec + de 200 000 avis</h2>
+                        <p>Voici quelques commentaires</p>
+                    </div>
+                </div><!-- ends: .col-lg-12 -->
+                
+    <div class="testimonial-carousel owl-carousel">
+        
+    <div class="carousel-single">
+        <div class="author-thumb">
+            <img src="{{ asset('images/tthumb1.jpg') }}" alt="" class="rounded-circle">
+        </div>
+        <div class="author-info">
+            <h4>Francis Burton</h4>
+            <span>Bordeaux, France</span>
+        </div>
+        <p class="author-comment">Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident
+            culpa officia deserunt mollit.</p>
+    </div><!-- ends: .carousel-single -->
+
+        
+    <div class="carousel-single">
+        <div class="author-thumb">
+            <img src="{{ asset('images/tthumb1.jpg') }}" alt="" class="rounded-circle">
+        </div>
+        <div class="author-info">
+            <h4>Francis Burton</h4>
+            <span>Bordeaux, France</span>
+        </div>
+        <p class="author-comment">Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident
+            culpa officia deserunt mollit.</p>
+    </div><!-- ends: .carousel-single -->
+
+        
+    <div class="carousel-single">
+        <div class="author-thumb">
+            <img src="{{ asset('images/tthumb1.jpg') }}" alt="" class="rounded-circle">
+        </div>
+        <div class="author-info">
+            <h4>Francis Burton</h4>
+            <span>Bordeaux, France</span>
+        </div>
+        <p class="author-comment">Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit anim laborum sint occaecat cupidatat non proident. Occaecat cupidatat non proident
+            culpa officia deserunt mollit.</p>
+    </div><!-- ends: .carousel-single -->
+
+    </div><!-- ends: .testimonial-carousel -->
+
+            </div>
+        </div>
+    </section><!-- ends: .testimonial-wrapper -->
+
+    <section class="clients-logo-wrapper border-top p-top-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+    <div class="logo-carousel owl-carousel">
+        <div class="carousel-single">
+            <img src="{{ asset('images/cl1.png') }}" alt="">
+        </div>
+        <div class="carousel-single">
+            <img src="{{ asset('images/cl2.png') }}" alt="">
+        </div>
+        <div class="carousel-single">
+            <img src="{{ asset('images/cl3.png') }}" alt="">
+        </div>
+        <div class="carousel-single">
+            <img src="{{ asset('images/cl4.png') }}" alt="">
+        </div>
+        <div class="carousel-single">
+            <img src="{{ asset('images/cl5.png') }}" alt="">
+        </div>
+        <div class="carousel-single">
+            <img src="{{ asset('images/cl1.png') }}" alt="">
+        </div>
+    </div><!-- ends: .logo-carousel -->
+
+                </div>
+            </div>
+        </div>
+    </section><!-- ends: .clients-logo-wrapper -->
+
+    
+
+    <footer class="footer-three footer-grey p-top-95">
+        <div class="footer-top p-bottom-25">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-sm-6">
+                        
+    <div class="widget widget_pages">
+        <h2 class="widget-title">Informations</h2>
+        <ul class="list-unstyled">
+            
+    <li class="page-item"><a href="">A propos</a></li>
+
+            
+    <li class="page-item"><a href="">Nosu contacter</a></li>
+
+            
+    <li class="page-item"><a href="">Nos tarifs</a></li>
+
+            
+    <li class="page-item"><a href="">Notre support</a></li>
+
+            
+    <li class="page-item"><a href="">Nos conditions</a></li>
+
+            
+    <li class="page-item"><a href="">Principe de fonctionnement</a></li>
+
+        </ul>
+    </div>
+
+                    </div><!-- ends: .col-lg-3 -->
+                    <div class="col-lg-3 d-flex justify-content-lg-center  col-sm-6">
+                        
+    <div class="widget widget_pages">
+        <h2 class="widget-title">Liens utiles</h2>
+        <ul class="list-unstyled">
+            
+    <li class="page-item"><a href="">Rejoindre tweazy</a></li>
+
+            
+    <li class="page-item"><a href="">S'inscrire</a></li>
+
+            
+    <li class="page-item"><a href="">Comment ça marche</a></li>
+
+            
+    <li class="page-item"><a href="">Les avantages</a></li>
+
+            
+    <li class="page-item"><a href="">L'application</a></li>
+
+            
+    <li class="page-item"><a href="">Les catégories</a></li>
+
+        </ul>
+    </div>
+
+                    </div><!-- ends: .col-lg-3 -->
+                    <div class="col-lg-3 col-sm-6">
+                        
+    <div class="widget widget_social">
+        <h2 class="widget-title">Suivez-nous</h2>
+        
+    <ul class="list-unstyled social-list">
+        <li><a href=""><span class="mail"><i class="la la-envelope"></i></span> Contacter le support</a></li>
+        <li><a href=""><span class="twitter"><i class="fab fa-twitter"></i></span> Twitter</a></li>
+        <li><a href=""><span class="facebook"><i class="fab fa-facebook-f"></i></span> Facebook</a></li>
+        <li><a href=""><span class="instagram"><i class="fab fa-instagram"></i></span> Instagram</a></li>
+        <li><a href=""><span class="gplus"><i class="fab fa-google-plus-g"></i></span> Google+</a></li>
+    </ul>
+
+    </div><!-- ends: .widget -->
+
+                    </div><!-- ends: .col-lg-3 -->
+                    <div class="col-lg-4 col-sm-6">
+                        
+    <div class="widget widget_text">
+        <h2 class="widget-title">Tweazy sur mobile</h2>
+        <div class="textwidget">
+            <p>Téléchargez Tweazy pour retrouvez tous les projets et tous les messages en un clic n'importe quand, n'importe où.</p>
+            <ul class="list-unstyled store-btns">
+                <li><a href="" class="btn-gradient btn-gradient-two btn btn-md btn-icon icon-left"><span class="fab fa-apple"></span> App Store</a></li>
+                <li><a href="" class="btn btn-dark btn-md btn-icon btn-icon"><span class="fab fa-android"></span> Google Play</a></li>
+            </ul>
+        </div>
+    </div><!-- ends: .widget -->
+
+                    </div><!-- ends: .col-lg-3 -->
+                </div>
+            </div>
+        </div><!-- ends: .footer-top -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-bottom--content">
+                            <a href="" class="footer-logo"><img src="{{ asset('images/logo1.png') }}" alt=""></a>
+                            <p class="m-0 copy-text">©2019 Tweazy. Fait par <a href="">Tweazy</a></p>
+                            <ul class="list-unstyled lng-list">
+                                <li><a href="">English</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- ends: .footer-bottom -->
+    </footer><!-- ends: .footer -->
+
+
+     
+    <div class="modal fade" id="login_modal" tabindex="-1" role="dialog" aria-labelledby="login_modal_label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="login_modal_label"><i class="la la-lock"></i> Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/" id="login-form">
+                        <input type="text" class="form-control" placeholder="Username or Email" required>
+                        <input type="password" class="form-control" placeholder="Password" required>
+                        <div class="keep_signed custom-control custom-checkbox checkbox-outline checkbox-outline-primary">
+                            <input type="checkbox" class="custom-control-input" name="keep_signed_in" value="1" id="keep_signed_in">
+                            <label for="keep_signed_in" class="not_empty custom-control-label">Keep me signed in</label>
+                        </div>
+                        <button type="submit" class="btn btn-block btn-lg btn-gradient btn-gradient-two">Sign In</button>
+                    </form>
+
+                    <div class="form-excerpts">
+                        <ul class="list-unstyled">
+                            <li>Not a member? <a href="">Sign up</a></li>
+                            <li><a href="">Recover Password</a></li>
+                        </ul>
+                        <div class="social-login">
+                            <span>Or connect with</span>
+                            <p><a href="" class="btn btn-outline-secondary"><i class="fab fa-facebook-f"></i> Facebook</a><a href="" class="btn btn-outline-danger"><i class="fab fa-google-plus-g"></i> Google</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+     
+    <div class="modal fade" id="signup_modal" tabindex="-1" role="dialog" aria-labelledby="signup_modal_label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signup_modal_label"><i class="la la-lock"></i> Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/" id="signup-form">
+                        <input type="email" class="form-control" placeholder="Email" required>
+                        <input type="password" class="form-control" placeholder="Password" required>
+                        <button type="submit" class="btn btn-block btn-lg btn-gradient btn-gradient-two">Sign Up</button>
+                    </form>
+
+                    <div class="form-excerpts">
+                        <ul class="list-unstyled">
+                            <li>Already a member? <a href="">Sign In</a></li>
+                            <li><a href="">Recover Password</a></li>
+                        </ul>
+                        <div class="social-login">
+                            <span>Or Signup with</span>
+                            <p><a href="" class="btn btn-outline-secondary"><i class="fab fa-facebook-f"></i> Facebook</a><a href="" class="btn btn-outline-danger"><i class="fab fa-google-plus-g"></i> Google</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+<script>
+
+
+var specialSliderd = $('.testimonial-carousel');
+			specialSliderd.owlCarousel(
+			{
+				loop:false,
+				autoplay:false,
+				center:true,
+				stagePadding:0,
+				margin:10,
+				nav:true,
+				dots:false,
+				smartSpeed:700,
+				items:1,
+				navText : ['<button type="button" role="presentation" class="owl-prev disabled"><span class="i la la-long-arrow-left"></span></button>','<button type="button" role="presentation" class="owl-next"><span class="i la la-long-arrow-right"></span></button>']
+
+			});
+
+
+if($('.special_slider').length)
+		{
+			var specialSlider = $('.special_slider');
+			specialSlider.owlCarousel(
+			{
+				loop:true,
+				autoplay:false,
+				center:true,
+				stagePadding:190,
+				margin:5,
+				nav:false,
+				dots:false,
+				smartSpeed:700,
+				responsive:
+				{
+					0:{items:1,margin:5,stagePadding:0},
+					992:{items:2,margin:5,stagePadding:130},
+					1280:{items:3,margin:5,stagePadding:190}
+				}
+			});
+		}
+
+		if($('.special_slider_nav').length)
+		{
+			var next = $('.special_slider_nav');
+			next.on('click', function()
+			{
+				specialSlider.trigger('next.owl.carousel');
+			});
+		}
+</script>
+{% endblock %}
